@@ -21,5 +21,16 @@ class MainActivity : AppCompatActivity() {
             Log.d("메인화면","로그 출력")
             Log.e("메인화면","e 로 로그 찍기")
         }
+
+        btnOk.setOnClickListener {
+            // 확인 버튼이 눌리면 실행할 일.
+            // 1. edtContent 에 타이핑 해준 문구(text)가 무엇인가? -> 변수에 저장.
+
+            val inputContent = edtContent.text.toString()
+            Log.d("inputContent", inputContent)
+
+            // 2. txtContent 에 변수를 저장해둔 문구 -> text 속성에 대입 (문구 변경)
+            txtContents.text = inputContent
+        }
     }
 }
