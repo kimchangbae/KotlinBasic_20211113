@@ -31,6 +31,9 @@ class MainActivity : AppCompatActivity() {
 
             // 2. txtContent 에 변수를 저장해둔 문구 -> text 속성에 대입 (문구 변경)
             txtContents.text = inputContent
+
+            // 3. 입력한 내용을 토스트로 출력
+            Toast.makeText(this, inputContent, Toast.LENGTH_SHORT).show()
         }
     }
 }
