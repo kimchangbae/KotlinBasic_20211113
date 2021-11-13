@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
 
         btnToast.setOnClickListener {
             // 이 내부의 코드는, 토스트 띄우기 버튼을 누를 때 마다 실행됨.
-            Toast.makeText(this,"토스트 띄우기",Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "토스트 출력", Toast.LENGTH_SHORT).show()
         }
 
         btnLog.setOnClickListener {
